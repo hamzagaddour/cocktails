@@ -1,0 +1,12 @@
+<div class="container d-flex flex-row">
+  <app-cocktails-list
+    (changeCocktail)="selectCocktail($event)"
+    [cocktails]="cocktails"
+    [selectedCocktail]="selectedCocktail"
+    class="flex-50 pr-10"
+  ></app-cocktails-list>
+  <app-cocktails-details
+    [cocktail]="selectedCocktail"
+    class="flex-50 pl-10"
+  ></app-cocktails-details>
+</div>
